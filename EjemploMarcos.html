@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<center>
+
+hola
+
+	<FRAMESET ROW=10%,*>
+
+	<FRAME SRC="EjemploMarcos.html" NAME="arriba"> </FRAME>
+		<FRAMESET COLS=33%, 33%, *>
+			<frame src="a.htm">
+			<frame src="b.htm">
+			<frame src="c.htm">
+
+			</frame>
+			</frame>
+			</frame>
+
+	</FRAMESET>
+
+
+<h2>frames y formularios</h2>
+<table border =0 width="100%"><tr>
+<td align=center>
+
+	<form>
+
+		<select name="list">
+<option value="a.html">Contenido a</option>
+<option value="b.html">Contenido b</option>
+<option value="c.html">Contenido c</option>
+	
+		</select><br />
+
+		<input type=button value="frame izquierdo" onClick="parent.izquierda.location.href=this.form.list.options[this.form.selectedIndex].value">
+</form>
+
+</td>
+
+
+<td align=center>
+
+	<form>
+
+		<select name="list">
+<option value="a-html">Contenido a</option>
+<option value="a-html">Contenido b</option>
+<option value="a-html">Contenido c</option>
+	
+		</select><br>
+
+		<input type=button value="frame central" onClick="parent.centro.location.href=this.form.list.options[this.form.selectedIndex].value">
+</form>
+
+</td>
+
+
+
+<td align=center>
+
+	<form>
+
+		<select name="list">
+<option value="a-html">Contenido a</option>
+<option value="a-html">Contenido b</option>
+<option value="a-html">Contenido c</option>
+	
+		</select><br>
+
+		<input type=button value="frame derecha" onClick="parent.derecha.location.href=this.form.list.options[this.form.selectedIndex].value">
+</form>
+
+</td>
+
+
+
+</tr></table>
+</center>
+
+
+
+		</html>
+
+

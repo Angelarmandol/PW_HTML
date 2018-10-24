@@ -1,0 +1,72 @@
+body {
+
+	
+	background: url("icono.jpeg")
+	background-position right top;
+	background-size: 500p, 100p
+	background-color: cyan;
+
+}
+
+a{
+	color: purple
+
+}
+
+h1{
+background-color: NavajoWhite
+font-variant small-caps;
+font-weight: bold;
+font-style: italic;
+}
+
+p{
+	color:#173B0B
+}
+
+div{
+	background-color: navy
+
+}
+
+
+/*
+Red, tomato, orange, ligthblue, blue, navy, dodgeblue, darkblue, 
+green, ligthgreen, mediumseagreen, gray, ligthray darkgray, violet, purple
+navajowhite, beige, etc.
+
+background-image: url ("https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg")
+background-image: repeat-x;
+background-position:right top;
+
+valores
+
+left top
+left center
+left bottom
+right center
+right bottom
+right
+center top
+center bottom
+center center
+center
+bottom
+
+background-size: auto|tamaño|%
+background-size: 200px 100p;
+
+background-attachment:
+scroll/fixed/local
+
+scroll actua en dependencia a la pagina
+
+fixed no actua en depedecncia ala pagina
+
+local actua en dependencia a otros elelmentos
+
+
+;
+
+*/
+

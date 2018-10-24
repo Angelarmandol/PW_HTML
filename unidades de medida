@@ -1,0 +1,39 @@
+unidades de medida
+Absolutas
+cm centimetros
+mm milimetros
+in pulgadas
+px pixeles
+
+pt puntos
+pc picas
+
+
+-relativas
+em Relativa al tamaño de la fuente utilizada
+ex reltiva al tamaño de la letra x
+ch relativa al ancho del 0
+rem relativa al tamaño de la fuente principal
+vw Relativa al 1% del ancho
+vh Relativa al 1% de la altura del dispositivo visual
+vhmin relativa al 1% del dispositivo vistas pequeñlo
+vmax relativa al 1% del dispositivo visual grande
+% relativo al emlemento principal
+
+Estilo
+Doted . . . . . 
+SDashed _ _ _ _ _ _ 
+Solid _________________
+Double____________________
+	  ____________________
+groobve |__________
+ridge |____________
+birdes individuales
+
+border-top
+border-rigth
+border bottom
+borderleft
+border-top style : dotted
+border rigth style: groove
+dorder-style: dotted dashd

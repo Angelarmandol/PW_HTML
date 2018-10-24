@@ -1,0 +1,26 @@
+<html>
+wer
+	<form>
+
+	    <fieldset>
+
+
+
+	    	<legend>User</legend>
+
+
+	   		<p>User <input type="text" name="deporte" placeholder="Nombre de usuario"></p>
+			<p>PAss<input type="password" name="deporte" placeholder="Password"></p>
+
+	    	
+
+
+
+	        <p>><input type="submit"  value="Enviar datos"> </p>
+	        <p>><input type="reset"  value="Reiniciar formulario"> </p>
+	        
+	    </fieldset>
+
+	</form>
+
+</html>

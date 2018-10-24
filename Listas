@@ -1,0 +1,26 @@
+Listas
+liy-style
+-type
+-position
+-image
+
+list-style: square inside url("favicon.ong");
+
+list-style-type: valor
+
+valores -> disc, armeninan, cicrle, cjk-ideografic, decimal, lower-aplha etc
+
+list style- position: valor
+
+valor -> outside, inside
+
+outside
+* cafe-a
+* bebida energetica
+* refersco
+
+*insidecafe-a
+*te
+*refresco
+
+list-style-image: url;
