@@ -21,16 +21,32 @@
 <p> </p>
 <h2> Formulario de registro </h2>
 <p></p>
-<div aling="center">
+<div aling="center" name="formulario">
   <p>Nombre <input name="nombre" value="juan" type="text"></p>
   <p>Apellido<input name="apellido" value="Penas" type="text"></p>
   <form action=""> <input name="sexo" value="Masculino" type="radio"> Masculino<br>
+
     <input name="sexo" value="Femenino" type="radio"> Femenino<br>
   </form>
-  <button onclick="fn_btn_push()"/>Subir
+
 
 </div>
-sexo con dos botones sradio, la edad con un desplegable, y el teléfono.
+
+<div>
+  Edad:
+  <select name="edades" id="edad" onchange="lista()">
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+  </select>
+
+</div>
+
+
+<button onclick="fn_btn_push()">subir</button>
 
 </body>
 </html>
