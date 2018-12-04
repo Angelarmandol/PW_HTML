@@ -21,16 +21,15 @@
 <p> </p>
 <h2> Formulario de registro </h2>
 <p></p>
-<div aling="center" name="formulario">
-  <p>Nombre <input name="nombre" value="juan" type="text"></p>
-  <p>Apellido<input name="apellido" value="Penas" type="text"></p>
-  <form action=""> <input name="sexo" value="Masculino" type="radio"> Masculino<br>
+  <div aling="center" name="formulario">
+    <p>Nombre <input name="nombre"  type="text"></p>
+    <p>Apellido<input name="apellido" type="text"></p>
+    <p>Telefono<input name="telefono" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></p>
+      <form action=""> <input name="sexo" value="Masculino" type="radio"> Masculino<br>
+        <input name="sexo" value="Femenino" type="radio"> Femenino<br>
+      </form>
 
-    <input name="sexo" value="Femenino" type="radio"> Femenino<br>
-  </form>
-
-
-</div>
+  </div>
 
 <div>
   Edad:
