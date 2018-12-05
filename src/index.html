@@ -16,6 +16,11 @@
       align-content:center;
     }
 
+    form{
+
+      max-width: 150px;
+    }
+
 
   </style> <title>Formulario de registro</title>
 </head>
@@ -23,19 +28,21 @@
 <p> </p>
 <h2 align="center"> Formulario de registro </h2>
 <p></p>
-  <div align="center" name="formulario">
-    <p>Nombre <input name="nombre" id="nm" type="text"></p>
-    <p>Apellido<input name="apellido" id="a" type="text"></p>
-    <p>Telefono<input name="telefono" id="tl" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></p>
-      <form action=""> <input id="sexo" name="sexo" value="Masculino" type="radio"> Masculino<br>
-        <input name="sexo" value="Femenino" type="radio"> Femenino<br>
+  <div align="center" name="formulario"  width="920" height="900">
+    <p>Nombre <input name="nombre" id="nm" type="text" onclick="doWhite(id);"></p>
+    <p>Apellido<input name="apellido" id="ap" type="text" onclick="doWhite(id);"></p>
+    <p>Telefono<input name="telefono" id="tl" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required onclick="doWhite(id);"></p>
+    <div >
+      <form  action="" id="sx" onclick="doBacgroundColor(id);" >
+            <input id="sexo" name="sexo" value="Masculino" type="radio" > Masculino<br>
+            <input name="sexo" value="Femenino" type="radio"> Femenino<br>
       </form>
-
+    </div>
   </div>
 
 <div align="center">
   Edad:
-  <select name="edades" id="edad" onchange="lista()">
+  <select name="edades" id="edad" onchange="lista()" onclick="doWhite(id);">
     <option value="18">18</option>
     <option value="19">19</option>
     <option value="20">20</option>
@@ -47,6 +54,7 @@
 
 <div align="center">
 <br><br><br>
+  <p id="txt">Favor de rellenar el formulario</p>
   <button align="center" onclick="fn_btn_push()">subir</button>
 </div>
 
