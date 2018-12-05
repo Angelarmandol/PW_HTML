@@ -8,11 +8,12 @@
       background-color: #2970CA;
       color: #E8F1F2;
       font-family: "Berlin Sans FB", Times, serif;
+      align-content:center;
     }
 
     h2{
       font-family: "Eras ITC", Times, serif;
-      align
+      align-content:center;
     }
 
 
@@ -20,13 +21,13 @@
 </head>
 <body>
 <p> </p>
-<h2> Formulario de registro </h2>
+<h2 align="center"> Formulario de registro </h2>
 <p></p>
   <div align="center" name="formulario">
-    <p>Nombre <input name="nombre"  type="text"></p>
-    <p>Apellido<input name="apellido" type="text"></p>
-    <p>Telefono<input name="telefono" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></p>
-      <form action=""> <input name="sexo" value="Masculino" type="radio"> Masculino<br>
+    <p>Nombre <input name="nombre" id="nm" type="text"></p>
+    <p>Apellido<input name="apellido" id="a" type="text"></p>
+    <p>Telefono<input name="telefono" id="tl" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></p>
+      <form action=""> <input id="sexo" name="sexo" value="Masculino" type="radio"> Masculino<br>
         <input name="sexo" value="Femenino" type="radio"> Femenino<br>
       </form>
 
@@ -42,11 +43,13 @@
     <option value="22">22</option>
     <option value="23">23</option>
   </select>
-
 </div>
 
+<div align="center">
+<br><br><br>
+  <button align="center" onclick="fn_btn_push()">subir</button>
+</div>
 
-<button onclick="fn_btn_push()">subir</button>
 
 </body>
 </html>
