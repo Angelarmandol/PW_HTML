@@ -6,6 +6,16 @@ var apellido;
 var telefono;
 var selectedSex;
 var ready = true;
+
+
+
+
+
+
+
+
+
+
 function fn_btn_push() {
   sexo = document.getElementsByName("sexo");
   name = document.getElementsByName("nombre")[0].value;
@@ -48,6 +58,9 @@ function fn_btn_push() {
 
   if(ready){
     alert("todo listo");
+
+      agregar(name,apellido,telefono,edadString,selectedSex);
+
   }else {
     alert("falta algo");
     ready=true;
@@ -70,3 +83,6 @@ function doWhite(id){
 function doBacgroundColor(id){
   document.getElementById(id.toString()).style.backgroundColor = '#2970CA';
 }
+
+
+

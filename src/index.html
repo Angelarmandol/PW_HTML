@@ -3,46 +3,40 @@
 <head>
 
   <script src="js/main.js"></script>
-  <style>
-    body {
-      background-color: #2970CA;
-      color: #E8F1F2;
-      font-family: "Berlin Sans FB", Times, serif;
-      align-content:center;
-    }
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+  <script src="js/firebase1.js"></script>
 
-    h2{
-      font-family: "Eras ITC", Times, serif;
-      align-content:center;
-    }
+  <style type="text/css" media="screen">
+    @import 'css/main.css';
+  </style>
 
-    form{
-
-      max-width: 150px;
-    }
-
-
-  </style> <title>Formulario de registro</title>
+ <title>Formulario de registro</title>
 </head>
+
 <body>
-<p> </p>
+
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+<script>src="js/firebase.js"</script>
+
+<h1 id="textoo"></h1>
 <h2 align="center"> Formulario de registro </h2>
 <p></p>
   <div align="center" name="formulario"  width="920" height="900">
     <p>Nombre <input name="nombre" id="nm" type="text" onclick="doWhite(id);"></p>
     <p>Apellido<input name="apellido" id="ap" type="text" onclick="doWhite(id);"></p>
     <p>Telefono<input name="telefono" id="tl" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required onclick="doWhite(id);"></p>
-    <div >
-      <form  action="" id="sx" onclick="doBacgroundColor(id);" >
-            <input id="sexo" name="sexo" value="Masculino" type="radio" > Masculino<br>
-            <input name="sexo" value="Femenino" type="radio"> Femenino<br>
-      </form>
-    </div>
+      <div >
+        <form  action="" id="sx" onclick="doBacgroundColor(id);" >
+              <input id="sexo" name="sexo" value="Masculino" type="radio" > Masculino<br>
+              <input name="sexo" value="Femenino" type="radio"> Femenino<br>
+        </form>
+      </div>
   </div>
 
 <div align="center">
   Edad:
-  <select name="edades" id="edad" onchange="lista()" onclick="doWhite(id);">
+  <select name="edades" id="edad" onchange="lista()" onclick="doWhite(id);" >
+    <option disabled selected value>Seleccionar</option>
     <option value="18">18</option>
     <option value="19">19</option>
     <option value="20">20</option>
@@ -54,10 +48,10 @@
 
 <div align="center">
 <br><br><br>
-  <p id="txt">Favor de rellenar el formulario</p>
   <button align="center" onclick="fn_btn_push()">subir</button>
+  <br><br>
+  <a href="users.html">Usuarios Registrados</a>
 </div>
-
 
 </body>
 </html>
