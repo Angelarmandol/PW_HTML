@@ -1,4 +1,4 @@
-alert("inicia firebASE0");
+
 var edadString;
 var sexo;
 var name;
@@ -26,10 +26,7 @@ var lista=[];
 
 usuario.once("value", function(snapshot) {
   snapshot.forEach(function(child) {
-    console.log(child.key+": "+child.val());
-  //alert(child.key+": "+child.val().nombre);
-    lista.push({n:child.val().nombre,a:child.val().edad});
-   // t('nombre').value=t('anio').value='';
+    lista.push({a:child.val().nombre,b:child.val().apellido,c:child.val().telefono,d:child.val().sexo,e:child.val().edad});
   });
 });
 
@@ -41,10 +38,16 @@ function t(x){return document.getElementById(x);}
 
 
 function mostrar(){
-  t('e').innerHTML='';
+  t('u').innerHTML='';
   for(var i=0,m;m=lista[i];i++)
-    t('e').innerHTML+=lista[i].n+'--'+lista[i].a+'<br />';
-
+    t('u').innerHTML+='<tr align="center">'+'<td>'+lista[i].a+'</td>'+'<td>'+lista[i].b+'</td>'+'<td>'+lista[i].c+'</td>'+'<td>'+lista[i].d+'</td>'+'<td>'+lista[i].e+'</td>'+'  </tr>'+'<br />';
+/*
+  <tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+  </tr>
+*/
 }
 
 

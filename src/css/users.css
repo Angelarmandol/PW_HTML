@@ -1,0 +1,17 @@
+body {
+  background-color: #7aca91;
+  color: #E8F1F2;
+  font-family: "Candara", Times, serif;
+  align-content:center;
+}
+
+h2{
+  font-family: "Consolas", Times, serif;
+  align-content:center;
+}
+
+
+
+table {
+  border: 1px solid black;
+}
