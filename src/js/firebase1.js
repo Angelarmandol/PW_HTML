@@ -19,7 +19,7 @@ var config = {
 firebase.initializeApp(config);
 var myFirebase = firebase.database().ref();
 var usuario = myFirebase.child("usuarios");
-
+var lista=[];
 
 
 
@@ -27,10 +27,25 @@ var usuario = myFirebase.child("usuarios");
 usuario.once("value", function(snapshot) {
   snapshot.forEach(function(child) {
     console.log(child.key+": "+child.val());
-  alert(child.key+": "+child.val().nombre);
+  //alert(child.key+": "+child.val().nombre);
+    lista.push({n:child.val().nombre,a:child.val().edad});
+   // t('nombre').value=t('anio').value='';
   });
 });
 
+
+
+
+
+function t(x){return document.getElementById(x);}
+
+
+function mostrar(){
+  t('e').innerHTML='';
+  for(var i=0,m;m=lista[i];i++)
+    t('e').innerHTML+=lista[i].n+'--'+lista[i].a+'<br />';
+
+}
 
 
 function agregar(a,b,c,d,e){
