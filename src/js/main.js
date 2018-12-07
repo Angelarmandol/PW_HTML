@@ -27,7 +27,6 @@ function fn_btn_push() {
       selectedSex = sexo[i].value;
   }
 
-
   if(name.toString().length==0){
     document.getElementById("nm").style.backgroundColor = '#FF0000';
     ready=false;
@@ -56,6 +55,7 @@ function fn_btn_push() {
   }
 
 
+
   if(ready){
     alert("todo listo");
 
@@ -69,17 +69,19 @@ function fn_btn_push() {
 
 
 }
+
+
+
+function doWhite(id){
+  document.getElementById(id.toString()).style.backgroundColor = '#FFFFFF';
+
+}
 function lista(){
 
   var edad = document.getElementById("edad");
   edadString =  edad.options[edad.selectedIndex].value.toString();
 
 }
-
-function doWhite(id){
-  document.getElementById(id.toString()).style.backgroundColor = '#FFFFFF';
-}
-
 function doBacgroundColor(id){
   document.getElementById(id.toString()).style.backgroundColor = '#2970CA';
 }
