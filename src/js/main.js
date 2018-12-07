@@ -17,6 +17,7 @@ var ready = true;
 
 
 function fn_btn_push() {
+  ready=true;
   sexo = document.getElementsByName("sexo");
   name = document.getElementsByName("nombre")[0].value;
   apellido = document.getElementsByName("apellido")[0].value;
@@ -57,12 +58,10 @@ function fn_btn_push() {
 
 
   if(ready){
-    alert("todo listo");
-
+    alert("Todo listo");
       agregar(name,apellido,telefono,edadString,selectedSex);
-
   }else {
-    alert("falta algo");
+    alert("Falta algo");
     ready=true;
   }
 
@@ -73,10 +72,14 @@ function fn_btn_push() {
 
 
 function doWhite(id){
+
   document.getElementById(id.toString()).style.backgroundColor = '#FFFFFF';
 
 }
-function lista(){
+
+
+
+function getEdad() {
 
   var edad = document.getElementById("edad");
   edadString =  edad.options[edad.selectedIndex].value.toString();

@@ -30,18 +30,15 @@ usuario.once("value", function(snapshot) {
   });
 });
 
-
-
-
-
 function t(x){return document.getElementById(x);}
 
-
 function mostrar(){
+
   t('u').innerHTML='';
-  for(var i=0,m;m=lista[i];i++)
+  for(var i=0,m;m=lista[i];i++){
     t('u').innerHTML+='<tr align="center">'+'<td>'+lista[i].a+'</td>'+'<td>'+lista[i].b+'</td>'+'<td>'+lista[i].c+'</td>'+'<td>'+lista[i].d+'</td>'+'<td>'+lista[i].e+'</td>'+'  </tr>'+'<br />';
-/*
+  }
+    /*
   <tr>
   <td>Jill</td>
   <td>Smith</td>
@@ -54,7 +51,7 @@ function mostrar(){
 function agregar(a,b,c,d,e){
 
 
-  alert("iniciapush");
+  alert("Usuario Agregado");
 
   usuario.push({
     "nombre":a,
