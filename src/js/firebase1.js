@@ -20,6 +20,19 @@ firebase.initializeApp(config);
 var myFirebase = firebase.database().ref();
 var usuario = myFirebase.child("usuarios");
 
+
+
+
+
+usuario.once("value", function(snapshot) {
+  snapshot.forEach(function(child) {
+    console.log(child.key+": "+child.val());
+  alert(child.key+": "+child.val().nombre);
+  });
+});
+
+
+
 function agregar(a,b,c,d,e){
 
 
