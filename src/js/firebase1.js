@@ -8,7 +8,7 @@ var selectedSex;
 var ready = true;
 
 var config = {
-  apiKey: "AIzaSyAnP_KyiedLt30QmsZMucbeIRFchQzI_tk",
+  apiKey: "lel",
   authDomain: "desarrollowenangel.firebaseapp.com",
   databaseURL: "https://desarrollowenangel.firebaseio.com",
   projectId: "desarrollowenangel",
